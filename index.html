@@ -5,55 +5,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movidom</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Poppins|Quicksand|Roboto" rel="stylesheet">
+    <title>Movidom - Rent, Buy, Watch Movies and TV Online</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="logo">
-            <img src="img/Movidom.PNG" alt="MOVIDOM">
+            <a href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="MOVIDOM"></a>
         </div>
 
         <!-- Top Menu -->
-        <nav class="container-item">
+        <nav class="header">
             <ul class="menu">
                 <li class="menu-item"><a href="/home">Home</a></li>
                 <li class="menu-item"><a href="/stream-buy">Stream/Buy</a></li>
-                <li class="menu-item"><a href="/coming-soon"></a>Coming Soon</li>
+                <li class="menu-item"><a href="/coming-soon">Coming Soon</a></li>
                 <li class="menu-item"><a href="/catalog">Catalog</a></li>
                 <li class="menu-item"><a href="/about">About</a></li>
-                <li class="menu-item"><a href="/search"><span class="fas fa--search fax2"></span></a></li>
+                <li class="menu-item"><a href="/search"><i class="fas fa-search fa-2x"></i></a></li>
             </ul>
         </nav>
 
         <!-- Featured Content -->
-        <section class="container-item">
-            <h2 class="poppins">Out Now</h2>
-            <h1 class="barlow">Game of Thrones</h1>
-            <p>
-                Began with the promise of an imminent threat on the world of men in a fictional medieval-fantasy
-                continent called Westeros. In the opening scene, we see mysterious inhumane figures -- called White
-                Walkers -- attack three men who are ranging in the far north of Westeros.
-            </p>
-            <button class="btn-primary">Stream/Buy</button>
-            <!-- Add a pseudo element here to add a vertical line! -->
-        </section>
+        <main class="featured">
+            <div class="featured-item">
+                <p class="poppins">Out Now</p>
+                <h1 class="barlow">Game of Thrones</h1>
+                <p>
+                    Began with the promise of an imminent threat on the world of men in a fictional medieval-fantasy
+                    continent called Westeros. In the opening scene, we see mysterious inhumane figures -- called White
+                    Walkers -- attack three men who are ranging in the far north of Westeros.
+                </p>
+                <button class="btn-primary poppins">Stream/Buy</button>
+                <!-- Add a pseudo element here to add a vertical line! -->
+            </div>
+        </main>
 
         <!-- Latest Movies -->
-        <section class="container-item latest-movies">
-            <div class="latest-movies-foreign">
-
+        <section class="latest-movies">
+            <div class="domestic-releases">
+                <p>Latest Domestic Releases | <a href="/watch-all">Watch All</a></p>
+                <form class="filter-movie">
+                    <select name="dropdown" class="filter-items">
+                        <option value="All Genres" selected>All Genres</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Documentary">Documentary</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Family">Family</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Rom-Com">Rom-Com</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Thriller">Thriller</option>
+                    </select>
+                </form>
+                <form class="filter-year">
+                    <select name="dropdown" class="filter-items">
+                        <option value="All Years" selected>All Years</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="90's">90's</option>
+                        <option value="80's">80's</option>
+                    </select>
+                </form>
             </div>
+            <div class="domestic">
+                <ul class="domestic-art latest-slider">
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x350"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x351"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x352"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x353"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x354"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x355"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x356"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x357"></li>
+                    <li class="domestic-art-items"><img src="https://source.unsplash.com/user/erondu/250x358"></li>
+                </ul>
+            </div>
+            <div class="foreign-releases">
+                <p>Latest Foreign Releases | <a href="/watch-all">Watch All</a></p>
+            </div>
+            <div class="foreign">
+                <ul class="foreign-art latest-slider">
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x350"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x351"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x352"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x353"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x354"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x355"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x356"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x357"></li>
+                    <li class="foreign-art-items"><img src="https://source.unsplash.com/user/erondu/250x358"></li>
+                </ul>
+            </div>
+            <!-- Flexbox Display -->
         </section>
+
+        <!-- Promo Section -->
+        <section class="promo">
+            <div class="watch"> 
+                <!-- Use pseudo element to add a line-->
+                <h1 class="barlow">Watch Everywhere.</h1>
+                <p class="poppins">
+                    Watch unlimited Movies and TV shows on your Phone, Tablet, Laptop, and TV without paying more.
+                </p>
+                <button class="btn-secondary">
+                    Watch free for 30 days
+                </button>
+            </div>
+            <div class="devices">
+                <img src="img/device-component" alt="Device">
+            </div>
+            <div class="tv">
+                <img src="img/tv-component" alt="TV">
+            </div>
+            <div class="enjoy"> 
+                <!-- Use pseudo element to add a line-->
+                <h1 class="barlow">Enjoy on your TV.</h1>
+                <p class="poppins">
+                    Watch on Smart TV, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <button class="btn-secondary">
+                    Watch free for 30 days
+                </button>
+            </div>
+            <!-- Grid Layout -->
+        </section>
+
+        <!-- Coming Soon -->
+        <section class="coming-soon">
+            <h1 class="barlow">Releases Coming Soon</h1>
+            <div class="play-video">
+                <span class="fab fa--player fax4"></span>
+                <a href="/play-video">Play Video</a>
+            </div>
+            <!-- All Videos -->
+        </section>
+
+        <footer>
+            <div class="see-it">
+                <h1 class="barlow">
+                    See it First
+                </h1>
+
+                <form class="newsletter">
+                    <input type="text" class="newsletter-item" placeholder="Enter your Email here">
+                    <button class="btn-sub">Subscribe</button>
+                </form>
+            </div>
+            <div class="copy-right">
+                &copy; 2019 Movidom. Proudly created by SGA-0.5 Group 4.
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook-f fa-2x"></i>
+                
+            </div>
+            
+        </footer>
     </div> <!-- End of wrapper -->
-    <main>
-
-
-        <section>
-
-
-        </section>
-    </main>
 
 </body>
 
