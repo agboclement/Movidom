@@ -32,8 +32,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
 }
 
-h4 {
+h2 {
     font-size: 3.5rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2.5rem;
     margin: 0;
 }
 
@@ -90,10 +95,12 @@ nav::before {
 
 .menu {
     width: 65vw;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .menu a, .menu i {
     padding: 40px;
     flex: 1fr;
@@ -159,6 +166,7 @@ nav::before {
     color: var(--primary-color);
     font-size: 1rem;
     display: inline-block;
+    box-shadow: var(--shadow);
 }
 
 .btn:hover {
@@ -168,12 +176,18 @@ nav::before {
 
 .latest-movies {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.domestic-releases {
+.latest-movies img {
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+}
+
+.domestic-releases, .foreign-releases {
     align-items: center;
     justify-content: flex-start;
 }
@@ -200,7 +214,12 @@ nav::before {
      font-weight: medium;
  }
 
-.domestic-releases p {
+ .filters:hover {
+    color: var(--primary-color);
+    background: rgba(var(--secondary-color), 0);
+ }
+
+.domestic-releases p, .foreign-releases p {
     margin-right: 500px;
 }
 
@@ -217,3 +236,38 @@ nav::before {
 .latest-slider {
     display: inline-flex;
 }
+
+.promo {
+    width: 90vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    'watch devices'
+    'tv enjoy';
+    /* grid-column-gap: 100px;
+    grid-row-gap: 100px; */
+    margin: 0 auto;
+}
+
+.watch {
+    grid-area: watch;
+    padding: 20%;
+}
+
+.devices {
+    grid-area: devices;
+    padding: 10px;
+}
+
+.tv {
+    grid-area: tv;
+    padding: 10px;
+}
+
+.enjoy {
+    grid-area: enjoy;
+    padding: 20%;
+}
+
