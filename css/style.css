@@ -11,25 +11,34 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.02em;
-
-}
-
 body {
     background-color: var(--bg-color);
     font-family: var(--text-font);
     color: var(--primary-color);
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+}
+
+html, body, ul, ol, li, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+li {
+    list-style: none;
 }
 
 .poppins {
     font-family: var(--text-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p{
     font-family: var(--header-font);
+    margin-top: 0;
 }
 
 h2 {
@@ -66,6 +75,8 @@ a:hover {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -88,21 +99,21 @@ nav::before {
 }
 
 .brand {
-    width: 35vw;
+    width: 30vw;
     position: relative;
     margin: auto 40px;
 }
 
 .menu {
-    width: 65vw;
+    width: 70vw;
     height: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu a, .menu i {
-    padding: 40px;
+    margin: 0 50px;
     flex: 1fr;
     text-decoration: none;
 }
@@ -241,8 +252,8 @@ nav::before {
     width: 90vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: auto auto;
+    grid-template-rows: 480px 480px;
     grid-template-areas: 
     'watch devices'
     'tv enjoy';
@@ -251,9 +262,14 @@ nav::before {
     margin: 0 auto;
 }
 
+.promo-img {
+    width: 500px;
+}
+
 .watch {
     grid-area: watch;
-    padding: 20%;
+    padding: 25%;
+    
 }
 
 .devices {
@@ -268,6 +284,25 @@ nav::before {
 
 .enjoy {
     grid-area: enjoy;
-    padding: 20%;
+    padding: 25%;
 }
 
+.relative {
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    background: var(--primary-color);
+    width: 220px;
+    height: 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 292px;
+    left: 10px;
+}
+
+.coming-sson {
+    height: 60vh;
+    width: 100vw;
+}
