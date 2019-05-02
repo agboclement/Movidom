@@ -257,10 +257,33 @@ nav::before {
     flex: auto;
     display: flex;
 } */
-
+/* 
 .latest-slider {
     display: inline-flex;
-}
+} */
+
+.latest-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .latest-slider::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .latest-slider::-webkit-scrollbar-track {
+    background: var(--bg-color);
+  }
+  
+  .latest-slider::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+    border-radius: 10px;
+  }
+  
+  .latest-slider::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
 
 .promo {
     width: 90vw;
