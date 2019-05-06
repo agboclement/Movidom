@@ -369,10 +369,6 @@ footer{
         
 }
 
-footer{
-    margin-left: 100px;
-    margin-top: 40px;
-}
 
 .newsletter-item{
     width: 300px;
@@ -381,7 +377,11 @@ footer{
     font-family: var(--text-font);
     font-size: 18px;
     border: solid var(--primary-color) 1px;
+    color: var(--primary-color);
+}
 
+::placeholder {
+    color: var(--primary-color)
 }
 
 .btn-sub{
@@ -397,8 +397,29 @@ footer{
 
 .copy-right{
     display: inline-block;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: 200px; 
 
+}
+
+.see-it{
+    margin-left: 200px;
+    
+}
+
+
+.newsletter {
+    margin-left: 0;
+}
+
+.see-it::before {
+    content: "";
+    background: var(--primary-color);
+    width: 100px;
+    height: 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 120px;
+    margin-top: 75px;
 }
