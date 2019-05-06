@@ -2,28 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Barlow:500|Poppins:200" rel="stylesheet">
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500|Poppins:200" rel="stylesheet" />
     <title>Movidom - Rent, Buy, Watch Movies and TV Online</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <div class="container">
         <div class="video-wrapper">
-            <video class="bg-video" src="video/Arya Stark Kills the Night King (Game of Thrones Season 8 Episode 3).mp4" autoplay="true" muted="true" loop="true"></video>
+            <video class="bg-video" src="video/Arya Stark Kills the Night King (Game of Thrones Season 8 Episode 3).mp4"
+                autoplay="true" muted="true" loop="true"></video>
         </div>
         <!-- Top Menu -->
         <nav class="header">
             <div class="brand">
-                <a class="logo" href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="MOVIDOM"></a>
+                <a class="logo" href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="MOVIDOM" /></a>
             </div>
             <div class="menu">
-                <a href="/home">Home</a>
+                <a href="/home" id="current">Home</a>
                 <a href="/stream-buy">Stream/Buy</a>
                 <a href="/coming-soon">Coming Soon</a>
                 <a href="/catalog">Catalog</a>
@@ -38,9 +39,11 @@
                 <p class="poppins p1">Out Now</p>
                 <h2 class="barlow">Game of Thrones</h2>
                 <div class="para poppins">
-                    Began with the promise of an imminent threat on the world of men in a fictional medieval-fantasy
-                    continent called Westeros. In the opening scene, we see mysterious inhumane figures -- called White
-                    Walkers -- attack three men who are ranging in the far north of Westeros.
+                    Began with the promise of an imminent threat on the world of men in
+                    a fictional medieval-fantasy continent called Westeros. In the
+                    opening scene, we see mysterious inhumane figures -- called White
+                    Walkers -- attack three men who are ranging in the far north of
+                    Westeros.
                 </div>
                 <a class="btn btn-primary poppins" href="#">Stream/Buy</a>
                 <!-- Add a pseudo element here to add a vertical line! -->
@@ -50,7 +53,10 @@
         <!-- Latest Movies -->
         <section class="latest-movies">
             <div class="domestic-releases latest-slider rls-align">
-                <p>Latest Domestic Releases | <a href="/watch-all" class="watch-all">Watch All</a></p>
+                <p>
+                    Latest Domestic Releases |
+                    <a href="/watch-all" class="watch-all">Watch All</a>
+                </p>
                 <form class="filter-movie">
                     <select name="dropdown" class="filter-items filters">
                         <option value="All Genres" selected>All Genres</option>
@@ -87,20 +93,86 @@
                 </form>
             </div>
             <div class="domestic">
-                <ul class="domestic-art latest-slider">
-                    <li class="domestic-art-items"><img src="/img/local/4th republic movie art.jpg" alt="4th republic"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Alter date movie art.jpg" alt="Alter date"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Jumbled movie art.jpg" alt="Jumbled"></li>
-                    <li class="domestic-art-items"><img src="/img/local/King of boys movie art.jpg" alt="King of boys"></li>
-                    <li class="domestic-art-items"><img src="/img/local//Knockout movie art.jpg" alt="Knockout"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Lion Heart movie art.jpg" alt="Lionheart"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Nimbe movie art.jpg" alt="Nimbe"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Odaju movie art.png" alt="Odaju"></li>
-                    <li class="domestic-art-items"><img src="/img/local/Yardie movie art.jpg" alt="Yardie"></li>
-                </ul>
+                <div class="domestic-art latest-slider">
+                    <div class="domestic-art-items">
+                        <img src="/img/local/4th republic movie art.jpg" alt="4th republic" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Alter date movie art.jpg" alt="The Alter date" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Jumbled movie art.jpg" alt="Jumbled" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/King of boys movie art.jpg" alt="King of boys" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local//Knockout movie art.jpg" alt="Knockout" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Lion Heart movie art.jpg" alt="Lionheart" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Nimbe movie art.jpg" alt="Nimbe" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Odaju movie art.png" alt="Odaju" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Yardie movie art.jpg" alt="Yardie" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="foreign-releases latest-slider rls-align">
-                <p>Latest Foreign Releases | <a href="/watch-all" class="watch-all">Watch All</a></p>
+                <p>
+                    Latest Foreign Releases |
+                    <a href="/watch-all" class="watch-all">Watch All</a>
+                </p>
                 <form class="filter-movie">
                     <select name="dropdown" class="filter-items filters">
                         <option value="All Genres" selected>All Genres</option>
@@ -137,17 +209,80 @@
                 </form>
             </div>
             <div class="foreign">
-                <ul class="foreign-art latest-slider">
-                    <li class="foreign-art-items"><img src="/img/foreign/Amar movie art.jpg" alt="Amar"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Avengers movie art.png" alt="Avengers"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Beyonce homecoming movie art.jpg" alt="Beyonce's Homecoming"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Captain marvel movie art.jpg" alt="Captain Marvel"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Cold pursuit movie art.jpg" alt="Cold pursuit"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/GOT movie art.jpg" alt="Game of Thrones"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Missing link movie art.jpg" alt="Missing link"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Shazam movie art.jpg" alt="Shazam"></li>
-                    <li class="foreign-art-items"><img src="/img/foreign/Us movie art.jpg" alt="Us"></li>
-                </ul>
+                <div class="foreign-art latest-slider">
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Amar movie art.jpg" alt="Amar" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Avengers movie art.png" alt="Avengers" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Beyonce homecoming movie art.jpg" alt="Beyonce's Homecoming" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Captain marvel movie art.jpg" alt="Captain Marvel" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Cold pursuit movie art.jpg" alt="Cold pursuit" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/GOT movie art.jpg" alt="Game of Thrones" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Missing link movie art.jpg" alt="Missing link" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Shazam movie art.jpg" alt="Shazam" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Us movie art.jpg" alt="Us" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- Flexbox Display -->
         </section>
@@ -159,7 +294,8 @@
                     <!-- Use pseudo element to add a line-->
                     <h4 class="barlow">Watch Everywhere.</h4>
                     <p class="poppins">
-                        Watch unlimited Movies and TV shows on your Phone, Tablet, Laptop, and TV without paying more.
+                        Watch unlimited Movies and TV shows on your Phone, Tablet, Laptop,
+                        and TV without paying more.
                     </p>
                     <a class="btn btn-primary poppins" href="#">Watch free for 30 days</a>
                     <!-- 
@@ -167,25 +303,26 @@
                         Watch free for 30 days
                     </button> -->
                 </div>
-                
             </div>
             <div class="devices">
-                <img src="img/devices-component.png" alt="Device" class="promo-img">
+                <img src="img/devices-component.png" alt="Device" class="promo-img" />
             </div>
             <div class="tv">
-                <img src="img/tv-component.png" alt="TV" class="promo-img">
+                <img src="img/tv-component.png" alt="TV" class="promo-img" />
             </div>
             <div class="enjoy relative">
                 <div class="enjoy-content line">
                     <!-- Use pseudo element to add a line-->
                     <h4 class="barlow">Enjoy on your TV.</h4>
                     <p class="poppins">
-                        Watch on Smart TV, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                        Watch on Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players, and more.
+                    </p>
                     <a class="btn btn-primary poppins" href="#">Watch free for 30 days</a>
                     <!-- 
                     <button class="btn-secondary">
                         Watch free for 30 days
-                    </button> -->    
+                    </button> -->
                 </div>
             </div>
             <!-- Grid Layout -->
@@ -208,7 +345,7 @@
                 </h2>
 
                 <form class="newsletter">
-                    <input type="text" class="newsletter-item" placeholder="Enter your Email here">
+                    <input type="text" class="newsletter-item" placeholder="Enter your Email here" />
                     <button class="btn-sub">Subscribe</button>
                 </form>
             </div>
@@ -219,10 +356,9 @@
                 <i class="fab fa-twitter fa-1x"></i>
                 <i class="fab fa-facebook-f fa-1x"></i>
             </div>
-
         </footer>
-    </div> <!-- End of wrapper -->
-
+    </div>
+    <!-- End of wrapper -->
 </body>
 
 </html>
