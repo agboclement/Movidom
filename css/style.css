@@ -400,8 +400,8 @@ footer{
     display: inline-block;
     font-size: 15px;
     margin-top: 30px;
-    margin-left: 200px; 
-
+    margin-left: 200px;
+    
 }
 
 .see-it{
@@ -423,4 +423,8 @@ footer{
     position: absolute;
     left: 120px;
     margin-top: 75px;
+}
+
+.fab {
+    padding: 15px;
 }
