@@ -59,9 +59,9 @@ h4 {
   padding-bottom: 0;
 }
 
-#current {
+/* #current {
   color: var(--secondary-color);
-}
+} */
 
 a {
   color: var(--primary-color);
@@ -142,12 +142,20 @@ nav::before {
 .featured-item::before {
   content: "";
   background: var(--primary-color);
-  width: 310px;
+  width: 420px;
   height: 1px;
   transform: rotate(90deg);
   position: absolute;
-  top: 160px;
-  left: -225px;
+  top: 215px;
+  left: -270px;
+}
+
+.featured-head {
+  width: 559px;
+}
+
+.para {
+  width: 600px;
 }
 
 .btn {
@@ -166,13 +174,67 @@ nav::before {
   background: rgba(var(--secondary-color), 0);
 }
 
+.btn-secondary {
+  position: relative;
+  left: 40%;
+}
+
 #helplink {
   color: var(--secondary-color);
 }
 
+.form-wrapper {
+  width: 60%;
+  position: relative;
+  left: 25%;
+  top: 30px;
+  background-color: var(--bg-color);
+  width: 50%;
+  line-height: 30px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+}
+
+.form-text {
+  font-family: var(--text-font);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form-item {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: 2px solid var(--primary-color);
+  background: var(--bg-color);
+  font-size: 16px;
+  font-family: var(--text-font);
+  color: var(--text-font);
+}
+
+option {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
 footer {
-  margin-left: 100px;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  box-shadow: var(--shadow);
 }
 
 .newsletter-item {
@@ -182,6 +244,7 @@ footer {
   font-family: var(--text-font);
   font-size: 18px;
   border: solid var(--primary-color) 1px;
+  color: var(--primary-color);
 }
 
 .btn-sub {
@@ -196,7 +259,30 @@ footer {
 
 .copy-right {
   display: inline-block;
-  font-size: 10px;
+  font-size: 15px;
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 200px;
+}
+
+.see-it {
+  margin-left: 200px;
+}
+
+.newsletter {
+  margin-left: 0;
+}
+
+.see-it::before {
+  content: "";
+  background: var(--primary-color);
+  width: 100px;
+  height: 1px;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 120px;
+  margin-top: 75px;
+}
+
+.fab {
+  padding: 15px;
 }
